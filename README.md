@@ -1,130 +1,6 @@
+# Quiz Application
 
-
-A Quiz Application where users can attempt quizzes category-wise (English, General Studies, Geography, History) and read built-in books to strengthen their knowledge. User authentication is included, and all data is managed with Firebase.
-🚀 Features
-✅ Category-wise quizzes (English, General Studies, Geography, History)
- ✅ Multiple-choice questions with scoring
- ✅ Built-in books to read after attempting quizzes
- ✅ User authentication (Signup & Login)
- ✅ Result tracking
- ✅ Responsive design
- ✅ Clean UI with modern styling
-🌐 Live Demo
-👉 Try it Live — (https://quiz-app-ochre-ten.vercel.app/)
-🛠️ Tech Stack
-TechPurpose
-React + Vite	Frontend framework & tooling
-Firebase	Backend (authentication + data)
-CSS	Styling
-Vercel / Netlify	Deployment
-
-📂 Folder Structure
-
-📦quiz-app
- ┣ 📂public
- ┣ 📂src
- ┃ ┣ 📂assets
- ┃ ┣ 📂data
- ┃ ┃ ┣ 📜books.js
- ┃ ┃ ┣ 📜categories.js
- ┃ ┃ ┗ 📜quizzes.js
- ┃ ┣ 📂pages
- ┃ ┃ ┣ 📜BookDetails.jsx
- ┃ ┃ ┣ 📜Books.jsx
- ┃ ┃ ┣ 📜Dashboard.jsx
- ┃ ┃ ┣ 📜Login.jsx
- ┃ ┃ ┣ 📜Quiz.jsx
- ┃ ┃ ┣ 📜Result.jsx
- ┃ ┃ ┗ 📜Signup.jsx
- ┃ ┣ 📂styles
- ┃ ┃ ┣ 📜App.css
- ┃ ┃ ┣ 📜globals.css
- ┃ ┃ ┗ 📜index.css
- ┃ ┣ 📜App.jsx
- ┃ ┣ 📜main.jsx
- ┣ 📜.gitignore
- ┣ 📜eslint.config.js
- ┣ 📜index.html
- ┣ 📜package-lock.json
- ┣ 📜package.json
- ┣ 📜vite.config.js
- ┗ 📜README.md
-⚙️ Installation
-1️⃣ Clone the repository
-bash
-CopyEdit
-git clone https://github.com/Roshankumar056/quiz-app.git
-cd quiz-app
-2️⃣ Install dependencies
-bash
-CopyEdit
-npm install
-3️⃣ Setup Firebase
-Create a project at Firebase Console
-Enable Authentication (Email/Password)
-Enable Firestore Database or Realtime Database
-Add your Firebase config to your project (e.g., src/firebase/config.js — create this if not yet present)
-4️⃣ Run locally
-bash
-CopyEdit
-npm run dev
-5️⃣ Build for production
-bash
-CopyEdit
-npm run build
-🔑 Firebase Configuration Example
-javascript
-CopyEdit
-// src/firebase/config.js
-import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
-
-const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
-};
-
-const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-export const db = getFirestore(app);
-📖 How It Works
-Dashboard: Choose a quiz category
-Quiz: Answer multiple-choice questions
-Result: See your score immediately
-Books: Read recommended books to enhance knowledge
-Auth: Sign up & log in to track your progress (if implemented)
-🚀 Deployment
-Deployed with Vercel (or Netlify)
-👉 Live Demo
-✅ Future Enhancements
-✅ Time-based quizzes
-✅ User progress history
-✅ Leaderboard
-✅ Admin panel to add/edit questions and books
-✅ Dark mode
-🙌 Contributing
-Pull requests are welcome!
- For major changes, open an issue first to discuss what you’d like to change.
-📃 License
-MIT License — free to use for learning and personal projects.
-✨ Author
-Developed by Roshan Kumar
-GitHub • LinkedIn
-📌 Note
-📖 Categories, quizzes, and books are managed inside:
-src/data/categories.js
-src/data/quizzes.js
-src/data/books.js
- Feel free to add or edit them to grow your content library!
-✅ Ready to deploy, share, and impress!
- If you want, I can also prepare a ready .md file you can download — just say: "Yes, generate my file!" 🚀✨# Quiz Application
-
-A quiz application that allows users to attempt quizzes by category (English, General Studies, Geography, History) and read built-in books for knowledge enhancement. It includes user authentication, with all data managed via an AXIOS API.
+The Quiz Application enables users to attempt category-wise quizzes (English, General Studies, Geography, History) and read built-in books to enhance their knowledge. It includes user authentication and utilizes an AXIOS API for data management.
 
 ## 🚀 Features
 - ✅ Category-wise quizzes
@@ -136,17 +12,32 @@ A quiz application that allows users to attempt quizzes by category (English, Ge
 - ✅ Modern UI
 
 ## 🌐 Live Demo
-👉 Try it Live — (Replace with your deployment link)
+👉 Try it Live — (https://quiz-app-ochre-ten.vercel.app/)
 
 ## 🛠️ Tech Stack
-| Tech          | Purpose                      |
-|---------------|------------------------------|
-| React + Vite  | Frontend framework           |
-| AXIOS         | API requests                 |
-| CSS           | Styling                      |
-| Vercel / Netlify | Deployment                |
+| Technology    | Purpose                       |
+|---------------|-------------------------------|
+| React + Vite  | Frontend framework            |
+| AXIOS         | API requests                  |
+| CSS           | Styling                       |
+| Vercel        | Deployment                    |
 
-
+## 📂 Folder Structure
+```
+quiz-app
+ ┣ public
+ ┣ src
+ ┃ ┣ assets
+ ┃ ┣ data
+ ┃ ┣ pages
+ ┃ ┣ styles
+ ┃ ┣ App.jsx
+ ┃ ┣ main.jsx
+ ┣ .gitignore
+ ┣ package.json
+ ┣ vite.config.js
+ ┗ README.md
+```
 
 ## ⚙️ Installation
 1. **Clone the repository**
@@ -160,15 +51,24 @@ A quiz application that allows users to attempt quizzes by category (English, Ge
    npm install
    ```
 
+3. **Set up AXIOS** (create `src/axios/config.js`):
+   ```javascript
+   npm install axios
+
+4. **Run locally**
+   ```bash
+   npm run dev
+   ```
+
+
 ## 📖 How It Works
-- **Dashboard**: Select a quiz category
-- **Quiz**: Answer multiple-choice questions
-- **Result**: View your score
-- **Books**: Read recommended material
-- **Auth**: Sign up and log in to track progress
+- **Dashboard**: Choose a quiz category.
+- **Quiz**: Answer questions and view your score.
+- **Books**: Read recommended materials.
+- **Auth**: Sign up and log in to track progress.
 
 ## 🚀 Deployment
-Deployed with Vercel (or Netlify).
+Deployed using Vercel or Netlify.
 
 ## ✅ Future Enhancements
 - Time-based quizzes
@@ -178,22 +78,20 @@ Deployed with Vercel (or Netlify).
 - Dark mode
 
 ## 🙌 Contributing
-Pull requests welcome! Open an issue for major changes.
+Pull requests welcome! For major changes, please open an issue first.
 
 ## 📃 License
-MIT License — free for personal use.
+MIT License — free for personal and educational use.
 
 ## ✨ Author
 Developed by Roshan Kumar  
 GitHub • LinkedIn
 
 ## 📌 Note
-Categories, quizzes, and books are found in:
+Manage categories, quizzes, and books in:
 - `src/data/categories.js`
 - `src/data/quizzes.js`
-- `src/data/books.js`
+- `src/data/books.js`  
+Feel free to customize!  
 
-Feel free to expand the content library!
-
-✅ Ready to deploy and share!  
-If you want a .md file ready for download, just say: "Yes, generate my file!" 🚀✨
+Ready to deploy, share, and impress! If you want a .md file, just say: "Yes, generate my file!" 🚀✨
